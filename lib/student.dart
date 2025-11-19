@@ -1,9 +1,10 @@
 class Student {
-  String? id, name;
-  double? grade;
-  Student(this.grade, this.id, this.name);
+  final String id;
+  final String name;
+  final double gpa;
+  Student(this.gpa, this.id, this.name);
   @override
   String toString() {
-    return 'The id is $id and the name is $name and the grade is $grade';
+    return 'ID: $id | Name: $name | GPA: $gpa';
   }
 }

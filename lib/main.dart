@@ -39,7 +39,7 @@ void main(List<String> args) {
       studentManager.updateStudent(new Student(gpa, id, name));
       print("updated succesfully succesfully");
     } else if (answer == "d") {
-      studentManager.showAllStuden();
+      studentManager.showAllStudents();
     } else if (answer == "e") {
       stdout.write("Enter the id : ");
       String id = stdin.readLineSync()!;
@@ -51,9 +51,13 @@ void main(List<String> args) {
         print("Search complete.\n");
       }
     } else if (answer == "f") {
-      studentManager.loadFromFile('data/student.txt');
+      studentManager.loadFromFile(
+        'D:/dart_projects/student_management_system/data/student.json',
+      );
     } else if (answer == "g") {
-      studentManager.saveToFile("data/student.txt");
+      studentManager.saveToFile(
+        "D:/dart_projects/student_management_system/data/student.json",
+      );
     } else {
       print("Thanks for your time");
       break;

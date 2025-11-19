@@ -10,7 +10,9 @@ void main(List<String> args) {
     print("c-update a student");
     print("d-show all students");
     print("e-search for a student");
-    print("f-exit");
+    print('f-load from file');
+    print("g-add to file");
+    print("h-exit");
     stdout.write("Enter your choice : ");
     String answer = stdin.readLineSync()!;
     if (answer == "a") {
@@ -48,6 +50,10 @@ void main(List<String> args) {
         print(student);
         print("Search complete.\n");
       }
+    } else if (answer == "f") {
+      studentManager.loadFromFile('data/student.txt');
+    } else if (answer == "g") {
+      studentManager.saveToFile("data/student.txt");
     } else {
       print("Thanks for your time");
       break;

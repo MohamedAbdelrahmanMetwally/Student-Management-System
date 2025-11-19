@@ -38,12 +38,10 @@ Choose an option to perform the desired operation.
 
 ## 📄 Data File Format
 - Student data is stored in:
-  data/student.txt
+  data/student.json
 - Each line represents a student:
   id,name,gpa
-- Example:
-101,Ahmed,3.5
-102,Sara,3.9
+
 
 ---
 
@@ -60,7 +58,57 @@ Writes all current students to data/student.txt.
 </ul>
 
 ---
-
+## screen shots
+- ✅ Screenshot 1 — Main Menu
+```
+  ====== Student Management System ======
+a - Add a student
+b - Remove a student
+c - Update a student
+d - Show all students
+e - Search for a student
+f - Load from file
+g - Save to file
+h - Exit
+Enter your choice:
+```
+- ✅ Screenshot 2 — Adding a Student
+ ```
+   Enter your choice: a
+Enter ID: 101
+Enter name: Ahmed
+Enter GPA: 3.5
+Student added successfully.
+```
+- ✅ Screenshot 3 — Showing All Students
+```
+Enter your choice: d
+ID: 101 | Name: Ahmed | GPA: 3.5
+ID: 102 | Name: Sara  | GPA: 3.9
+ID: 103 | Name: Omar  | GPA: 2.8
+```
+- ✅ Screenshot 4 — Searching for a Student
+```
+  Enter your choice: e
+Enter ID: 102
+ID: 102 | Name: Sara | GPA: 3.9
+Search complete.
+```
+- ✅ Screenshot 5 — Updating a Student
+```
+  Enter your choice: c
+Enter ID: 101
+Enter new name: Ahmed Ali
+Enter new GPA: 3.8
+Student updated successfully.
+```
+- ✅ Screenshot 6 — Removing a Student
+ ```
+  Enter your choice: b
+Enter ID: 103
+Student removed successfully.
+```
+---
 ## 🛠️ Requirements
 <ul>
   <li>
@@ -107,6 +155,6 @@ Store data in CSV or a real database like SQLite
 </ol>
 
 ---
-
 ## 📬 Contact
 - GitHub: <a href="https://github.com/MohamedAbdelrahmanMetwally/">MohamedAbdelrahmanMetwally</a>
+
